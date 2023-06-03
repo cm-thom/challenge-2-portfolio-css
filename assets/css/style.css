@@ -2,12 +2,23 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px red solid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    /* border: 1px red solid; */
+}
+
+/* css to override  */
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none; 
+  color: cadetblue;
 }
 
 .header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: dimgrey;
     color: #ffffff;
 }
@@ -24,7 +35,6 @@
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     color: cadetblue;
 }
@@ -39,10 +49,63 @@
     padding: 0px 10px;
 }
 
+.header-img > img {
+    width: 100%;
+}
+
+main {
+    margin: auto;
+    width: 80%;
+}
+
+main section {
+    display: flex;
+}
+
 main section h2 {
-    display: inline-block;
     font-size: 48px;
     border-right: 3px darkcyan solid;
     color: darkcyan;
     padding: 10px;
 }
+
+#featured-project {
+    display:inline-block;
+    flex-basis: auto;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#featured-project > p {
+    position:relative; bottom: 30px;
+}
+
+/* base code for this flexbox layout taken from https://codepen.io/mogpt/pen/ebXdzg */
+.proj-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .proj-box > div {
+    display: flex; 
+    flex-basis: auto;  
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+.box { margin: 10px; }
+
+.proj-box > div > p {
+    position:relative; bottom: 30px;
+}
+
+.proj-name {
+    font-size: 24px;
+    color: black;
+    background-color: darkcyan;
+    font-weight: bold;
+    padding: 5px;
+
+}
+
+

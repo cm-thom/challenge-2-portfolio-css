@@ -15,29 +15,63 @@
         <h1>cm-thom</h1>
         <nav>
             <ul>
-                <!-- add links to proper sections incl resume doc link -->
-                <li>About Me</li>
-                <li>Work</li>
-                <li>Contact Me</li>
-                <li>Resume</li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
             </ul>
             <!-- add the cool subtitle in here -->
         </nav>
     </header>
 
-    <main>
-        <section class="about-me">
-            <h2>About Me</h2>
-            <p>lorem ipsum dolor sit amet...lorem ipsum dolor sit amet...lorem ipsum dolor sit amet...lorem ipsum dolor sit amet...lorem ipsum dolor sit amet.</p>
-        </section>
+    <div class="header-img">
+        <img src="https://placekitten.com/1920/198">
+    </div>
+ 
 
-        <section class="work">
+    <main>
+            <section class="about-me" id="about-me">
+                <h2>About Me</h2>
+                <p>lorem ipsum dolor sit amet...lorem ipsum dolor sit amet...lorem ipsum dolor sit amet...lorem ipsum dolor sit amet...lorem ipsum dolor sit amet.</p>
+            </section>
+        
+
+        <section class="work" id="work">
             <h2>Work</h2>
             <!-- section has one large project box, 4 smaller ones 2x2 below it -->
+            <div class="proj-wrapper">
+
+                <div id="featured-project">
+                    <img src="https://placekitten.com/600/400">
+                    <p class="proj-name">featured project name</p>
+                </div>
+
+                <div class="proj-box">
+
+                    <div class="box">
+                        <img src="https://placekitten.com/400/300">
+                        <p class="proj-name">project 2</p>
+                    </div>
+                    <div class="box">
+                        <img src="https://placekitten.com/400/300">
+                        <p class="proj-name">project 3</p>
+                    </div>
+                    <div class="box">
+                        <img src="https://placekitten.com/400/300">
+                        <p class="proj-name">project 4</p>
+                    </div>
+                    <div class="box">
+                        <img src="https://placekitten.com/400/300">
+                        <p class="proj-name">project 5</p>
+                    </div>
+                </div>
+            </div>
+
+
+
 
         </section>
 
-        <section class="contact-me">
+        <section class="contact-me" id="contact-me">
             <h2>Contact Me</h2>
             <ul>
                 <!-- add functioning links -->
