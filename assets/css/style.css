@@ -7,7 +7,7 @@
     /* border: 1px red solid; */
 }
 
-/* css to override  */
+/* css to override link styling taken from SO thread  */
 
 a:link,
 a:visited,
@@ -49,8 +49,16 @@ a:active {
     padding: 0px 10px;
 }
 
+
 .header-img > img {
     width: 100%;
+}
+
+.contact-me ul li {
+    display: inline-block;
+    border-bottom: 3px cadetblue solid;
+    padding: 0px 20px;
+    margin: 0px 20px;
 }
 
 main {
